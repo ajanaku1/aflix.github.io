@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+/* style the body */
+body {
+    margin: 0px;
+    color: #000;
+}
+
+/* style the heder */
+.header {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* topnav container */
+.topnav {
+    position: -webkit-sticky; /*safari*/
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color:  #bdbdbd;
+}
+
+/* topnav link */
+.topnav a {
+    float: left;
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* topnav links while hovering */
+.topnav a:hover {
+    background-color: #000;
+    color: #bdbdbd;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+/* content column container */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    position: relative;
+}
+
+/* main column */
+.main-column {
+    float: left;
+    width: 75%;
+    background-color: #bdbdbd;
+    padding: 10px;
+}
+
+/* side column */
+.side-column {
+    float: top;
+    width: 25%;
+    background-color: #bdbdbd;
+    padding: 10px;
+}
+
+/* fake image */
+#fakeimg {
+    width: 100%;
+    background-color: #000;
+    color: #ffffff;
+    height: 600px;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+/* fake image in side column */
+.side-column #fakeimg {
+    height: 180px;
+}
+
+/* Clear floats after the columns */
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .main-column, .side-column {
+      width: 100%;
+    }
+  }
+
+/* second heading */
+h2 {
+    text-align: center;
+}
+
+.foot {
+    background-color: #bdbdbd;
+    width: 100%;
+    padding: 10px;
+}
